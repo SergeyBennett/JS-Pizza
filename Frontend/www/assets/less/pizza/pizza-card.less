@@ -1,10 +1,30 @@
-.pizza-card {
-  img {
-    max-width: 250px;
-  }
 
-  h3 {
-    color: @mainColor;
-    background-color: lighten(@mainColor, 45%);
-  }
+.pizza-card {
+    margin: 2px;
+    width: 280px;
+    min-height:650px;
+    .pizza-type {
+        font-size: 0.8em;
+        color: grey;
+    }
+    .size-column {
+        * {
+            text-align: center;
+        }
+        .price {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+        button {
+            margin-left: 25px;
+        }
+    }
+    img {
+    max-width: 250px;
+    }
+
+      h3 {
+        color: @mainColor;
+        background-color: lighten(@mainColor, 45%);
+      }
 }

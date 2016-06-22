@@ -1,6 +1,6 @@
 @mainColor: blue;
 @import "pizza/pizza-card";
-@orange: #D48805;
+@orange: #E18814;
 @rightPanelWidth: 350px;
 @menuHeight: 90px;
 html {
@@ -22,58 +22,68 @@ body {
     top: 0px;
     width: 350px;
     box-shadow: -3px 1px 23px -6px rgba(0, 0, 0, 0.75);
-    .to-buy-element {
-        border-bottom: solid 1px #DEDEDE;
-        height: 102px;
-        div {
-            float: left;
-            width: 220px;
-            margin-left: 30px;
-            .row-1 {
-                font-size: 1.7em;
-                color: red;
-            }
-            .row-2 {
-                span {
-                    margin-right: 10px;
-                }
-            }
-            .row-3 {
-                span {
-                    font-weight: bold;
-                }
-                button {
-                    border: 0px;
-                    border-radius: 50%;
-                    width: 35px;
-                    height: 35px;
+    #cart {
+        height:80%;
+        overflow:auto;
+        overflow-x: hidden;
+        .to-buy-element {
+            height:130px;
+            border-bottom: 1px solid grey;
+            div {
+                float: left;
+                width: 350px;
+                margin-left: 20px;
+                overflow:hidden;
+                .row-1 {
                     font-size: 1.5em;
-                    color: white;
+                    color: red;
                 }
-                .minus {
-                    background-color: red;
+                .row-2 {
+                    span {
+                        margin-right: 10px;
+                    }
                 }
-                .plus {
-                    background-color: green;
-                }
-                .delete {
-                    float: right;
-                    border: solid 1px grey;
-                    background-color: white;
-                    color: orange;
+                .row-3 {
+                    :not(:first-child){
+                        margin:10px;
+                    }
+                    span {
+                        font-weight: bold;
+                    }
+                    button {
+                        border: 0px;
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                        font-size: 1em;
+                        color: white;
+                    }
+                    .minus {
+                        background-color: red;
+                    }
+                    .plus {
+                        background-color: green;
+                    }
+                    .delete {
+                        border: solid 1px grey;
+                        background-color: white;
+                        color: orange;
+                    }
                 }
             }
-        }
-        .to-buy-img {
-            position: relative;
-            right: -50px;
-            float: right;
-            height: 100px;
+            .to-buy-img {
+                display:inline-block;
+                height: 100px;
+                float:right;
+                position:absolute;
+                right:-50px;
+            }
         }
     }
     #submit {
         position: absolute;
         bottom: 100px;
+        width:350px;
         span {
             margin: 15px;
             font-weight: bold;
@@ -143,10 +153,9 @@ body {
             position: fixed;
             display: inline-block;
             height: @menuHeight;
-            width: 1200px;
+            width: auto;
             color: #C0C0C0;
             font-size: 1.5em;
-            margin-left: 120px;
             #row-upper {
                 border-bottom: 1px solid #C0C0C0;
                 height: @menuHeight/2;
@@ -158,6 +167,10 @@ body {
                 span {
                     margin: 1%;
                     vertical-align: middle;
+                    white-space: nowrap;
+                }
+                #work-time {
+                    color: grey;
                 }
             }
             #row-lower {
@@ -245,6 +258,8 @@ body {
 }
 
 .container {
+    float: left;
+    width: auto;
     #all-pizza {
         text-align: center;
         font-size: 2em;
@@ -262,23 +277,27 @@ body {
         text-align: center;
     }
     ul {
-        margin: 0 auto;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
         list-style: none;
-            margin-left:15%;
+        text-align: center;
+        min-height: 50px;
+        height: 100px;
         li {
             float: left;
             display: inline;
             button {
-                margin:5px;
+                margin: 5px;
                 display: block;
                 text-align: center;
-                width: 100px;
+                width: auto;
                 height: 30px;
                 text-decoration: none;
                 background-color: @orange;
-                border:1px solid red;
-                border-radius:10%;
-                color:white;
+                border: none;
+                border-radius: 10px 10px 10px 10px;
+                color: white;
             }
         }
     }
@@ -286,27 +305,6 @@ body {
 
 #whitespace {
     height: @menuHeight;
-}
-
-.pizza-card {
-    margin: 2%;
-    width: 280px;
-    .pizza-type {
-        font-size: 0.8em;
-        color: grey;
-    }
-    .size-column {
-        * {
-            text-align: center;
-        }
-        .price {
-            margin-top: 20px;
-            font-size: 2em;
-        }
-        button {
-            margin-left: 25px;
-        }
-    }
 }
 
 .round-orange-button {

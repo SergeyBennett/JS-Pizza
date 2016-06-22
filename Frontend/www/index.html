@@ -30,13 +30,13 @@
             </div>
             <div id='menu-rows'>
                 <p id='row-upper'>
-                    <span id='number' class="col-sm-3 visible-lg">
+                    <span id='number' class="col-sm-2 visible-sm visible-md visible-lg">
                         (044) 222 5 222
                         </span>
-                    <span id='work-time' class="col-sm-4 visible-lg">
+                    <span id='work-time' class="col-sm-4 visible-md visible-lg">
                         24 години/ 7 днів на тиждень
                         </span>
-                    <span id='free-delivery' class='col-sm-3'>
+                    <span id='free-delivery' class='col-sm-4 visible-lg'>
                         Безкоштовна доставка піци
                         </span>
                     <button type="button" class="btn btn-warning" id="login">Ввійти</button>
@@ -60,9 +60,6 @@
                         0
                         </div>
                     </span>
-                    <span id='float-right'>
-                        Очистити замовлення
-                    </span>
                     </span>
                 </div>
             </div>
@@ -74,272 +71,23 @@
                 <p id="all-pizza">Усі піци
                     <button>0</button>
                 </p>
-                <ul>
-                    <li>
-                        <button>type1</button>
-                    </li>
-                    <li>
-                        <button>type2</button>
-                    </li>
-                    <li>
-                        <button>type3</button>
-                    </li>
-                    <li>
-                        <button>type4</button>
-                    </li>
-                    <li>
-                        <button>type5</button>
-                    </li>
-                    <li>
-                        <button>type6</button>
-                    </li>
+                <ul id='filter-menu'>
                 </ul>
 
 
                 <div class="row" id="pizza_list">
-                    <div class="pizza-card col-sm-6 col-md-4">
-                        <div class="thumbnail pizza-card">
-                            <img src="assets/images/pizza_1.jpg">
-
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p class='pizza-type'>type</p>
-
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <div class='row'>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pizza-card col-sm-6 col-md-4">
-                        <div class="thumbnail pizza-card">
-                            <img src="assets/images/pizza_1.jpg">
-
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p class='pizza-type'>type</p>
-
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <div class='row'>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pizza-card col-sm-6 col-md-4">
-                        <div class="thumbnail pizza-card">
-                            <img src="assets/images/pizza_1.jpg">
-
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p class='pizza-type'>type</p>
-
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <div class='row'>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pizza-card col-sm-6 col-md-4">
-                        <div class="thumbnail pizza-card">
-                            <img src="assets/images/pizza_1.jpg">
-
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p class='pizza-type'>type</p>
-
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <div class='row'>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pizza-card col-sm-6 col-md-4">
-                        <div class="thumbnail pizza-card">
-                            <img src="assets/images/pizza_1.jpg">
-
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p class='pizza-type'>type</p>
-
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <div class='row'>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pizza-card col-sm-6 col-md-4">
-                        <div class="thumbnail pizza-card">
-                            <img src="assets/images/pizza_1.jpg">
-
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p class='pizza-type'>type</p>
-
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <div class='row'>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pizza-card col-sm-6 col-md-4">
-                        <div class="thumbnail pizza-card">
-                            <img src="assets/images/pizza_1.jpg">
-
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p class='pizza-type'>type</p>
-
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <div class='row'>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                        <p><img src='assets/images/size-icon.svg'>100</p>
-                                        <p><img src='assets/images/weight.svg'>100</p>
-                                        <p class='price'>Price</p>
-                                        <p>hrn</p>
-                                        <button type="button" class="btn btn-warning">Купити</button>
-                                    </div>
-                                    <div class='size-column col-lg-6'>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="connect"></div>
     <div id="additional-part">
-        <div class="to-buy-element">
-            <div class='to-buy-info'>
-                <span class="row-1">Pizza name</span>
-                <p class="row-2"><img src='assets/images/size-icon.svg'>
-                    <span>size</span>
-                    <img src='assets/images/weight.svg'>
-                    <span>weight</span>
-                </p>
-                <p class="row-3"><span>price</span>
-                    <button class="minus">-</button>
-                    <span>quan</span>
-                    <button class="plus">+</button>
-                    <button class="delete">&#215;</button>
-                </p>
-            </div>
-            <img class='to-buy-img' src='assets/images/pizza_1.jpg'>
+        <div id='cart'>
         </div>
         <div id="submit">
             <p>
                 <span class="float-left">Сума замовлення</span>
-                <span class="float-right">сума</span>
+                <span class="float-right" id='priceSum'>сума</span>
             </p>
             <p>
                 <button type="button" class="btn btn-warning">
@@ -364,7 +112,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <!--Own JavaScript -->
-    <!--<script type="text/javascript"  src="assets/js/main.js"> </script>-->
+    s<script type="text/javascript" src="assets/js/main.js">
+    </script>
 </body>
 
 </html>
